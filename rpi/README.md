@@ -11,9 +11,13 @@
 ### My Installation Information
 
 **Distributor ID:**	Raspbian
+
 **Description:**	Raspbian GNU/Linux 11 (bullseye)
+
 **Release:**	11
+
 **Codename:**	bullseye
+
 
 Additional file needed
 - boto_patch.py
@@ -88,7 +92,7 @@ region=us-east-1
 **Startup script**
 
 ```
-/usr/bin/python3 /home/rbooth/rpi_image_grabber.py -i 127.0.0.1:1111 -u 10 -p password -w 15000 -b mys3bucketname -l /photos
+/usr/bin/python3 /home/rbooth/image_grabber.py -i 127.0.0.1:1111 -u 10 -p password -w 15000 -b mys3bucketname -l /photos
 ```
 
 
