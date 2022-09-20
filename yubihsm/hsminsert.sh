@@ -30,7 +30,7 @@ do
                     fi
                     # Start the process
                     ipport="$LISTENIP:$useport"
-                    $connector_path --listen $ipport --serial $cleanserial &
+                    /usr/bin/noup $connector_path --listen $ipport --serial $cleanserial &
                 fi
         fi
 done

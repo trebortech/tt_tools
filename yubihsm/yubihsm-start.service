@@ -1,0 +1,10 @@
+[Unit]
+Description=YubiHSM AutoConfigure Script
+
+[Service]
+User=root
+ExecStart=/usr/bin/nohup /usr/local/bin/hsminsert.sh
+KillMode=none
+
+[Install]
+WantedBy=multi-user.target

@@ -20,5 +20,16 @@ These scripts are intended to auto config the YubiHSM connector service when a n
 
 #### Files
 
-- hsminsert.sh
-- yubihsm.rules
+- /usr/loca/bin/hsminsert.sh  <-- chmod +x
+- /etc/udev/rules.d/yubihsm.rules
+- /etc/systemd/system/yubihsm-start.service   <-- chmod +x
+
+Reload systemd
+```bash
+systemctl daemon-reload
+```
+
+Reload udev rules
+```bash
+udevadm control --reload
+```

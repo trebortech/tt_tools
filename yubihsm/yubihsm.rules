@@ -1,5 +1,4 @@
-"/etc/udev/rules.d/yubihsm.rules" 4L, 242C                                                                                         3,100         All
 ACTION!="add|change", GOTO="yubihsm2_connector_end"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", OWNER="svchsm"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0030", RUN+="/usr/local/bin/trigger.sh"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", OWNER="svchsm"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0030", TAG+="systemd", ENV{SYSTEMD_WANTS}="yubihsm-start.service"
 LABEL="yubihsm2_connector_end"
