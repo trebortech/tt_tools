@@ -1,5 +1,5 @@
 "/etc/udev/rules.d/yubihsm.rules" 4L, 242C                                                                                         3,100         All
 ACTION!="add|change", GOTO="yubihsm2_connector_end"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", OWNER="svchsm"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0030" RUN+="/usr/local/bin/trigger.sh"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0030", RUN+="/usr/local/bin/trigger.sh"
 LABEL="yubihsm2_connector_end"
