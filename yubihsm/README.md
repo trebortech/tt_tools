@@ -12,7 +12,7 @@ information updated with the YubiHSM details.
 - startup_hsm.sh
 
 
-### Status :green_circle: fir "On Insert configuration"
+### Status :green_circle: for "On Insert configuration"
 
 These scripts are intended to auto config the YubiHSM connector service when a new YubiHSM is inserted.
 
