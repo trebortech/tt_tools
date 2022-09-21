@@ -2,7 +2,7 @@
 
 ## Startup Scripts
 
-### :green_circle: On demand startup
+### Status :green_circle: for "On demand startup"
 These scripts require some pre-configuration before they can be used. The .config file needs to have
 information updated with the YubiHSM details.
 
@@ -12,7 +12,7 @@ information updated with the YubiHSM details.
 - startup_hsm.sh
 
 
-### :yellow_circle: On Insert configuration :construction: 
+### Status :green_circle: fir "On Insert configuration"
 
 These scripts are intended to auto config the YubiHSM connector service when a new YubiHSM is inserted.
 
